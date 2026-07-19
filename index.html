@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>G'day Proxian</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<h1>G'day Proxian</h1>
+				<button id="theme-toggle" title="Сменить тему">🌙</button>
+			</header>
+
+			<div id="loading" class="status">⏳ Загрузка proxy.txt...</div>
+			<div id="error" class="hidden"></div>
+
+			<table id="proxy-table" class="hidden">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>Ссылка</th>
+						<th>
+							<button id="copy-all-header-btn" title="Копировать все прокси">
+								📋 Копировать всё
+							</button>
+						</th>
+					</tr>
+				</thead>
+				<tbody id="proxy-tbody"></tbody>
+			</table>
+			<div id="no-data" class="hidden">Файл не содержит корректных ссылок.</div>
+		</div>
+
+		<script src="logic.js"></script>
+	</body>
+</html>

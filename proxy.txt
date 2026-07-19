@@ -1,5 +1,3 @@
-https://t.me/proxy?server=127.0.0.1&port=1443&secret=dd5569d5a09707dd028962894160d0e4b3
-
 https://t.me/proxy?server=aa027d01.koshkaproxy.shop&port=443&secret=ee1e355000114cdb95628c1564225a404b36326334346231662e6b6f73686b6170726f78792e73686f70
 
 https://t.me/proxy?server=fast1.mtproxygram.lol&port=443&secret=ee25299ae374d339b27f84d86066169e7e62726f777365722e79616e6465782e7275
@@ -50,8 +48,6 @@ https://t.me/proxy?server=secure.gorbushkin.click&port=443&secret=ee22b3219d7bbd
 
 https://t.me/proxy?server=0e8a5864.koshkaproxy.shop&port=443&secret=ee1e355000114cdb95628c1564225a404b36326334346231662e6b6f73686b6170726f78792e73686f70
 
-https://t.me/proxy?server=neo-vpn.ink&port=443&secret=ee941827d00b169bd4df5fc7d8dc06d0ad6e656f2d76706e2e696e6b
-
 https://t.me/proxy?server=ad2.arixo.shop&port=443&secret=eed09b88cbbd4e744865b890e5a0bd26876164322e617269786f2e73686f70
 
 https://t.me/proxy?server=ad5.arixo.shop&port=443&secret=ee995469d4d5a3221f69a1cc24d1cafa506164322e617269786f2e73686f70
@@ -61,8 +57,6 @@ https://t.me/proxy?server=4ad666e5.koshkaproxy.shop&port=443&secret=ee1e35500011
 https://t.me/proxy?server=update.femboylover.org&port=443&secret=ee7f302883cf187bb6f9e1906f5fe5f3a57777772e6d6963726f736f66742e636f6d
 
 https://t.me/proxy?server=cdn.savelyev.click&port=443&secret=ee289573f97532f1d66fe239efbf0585ad63646e2e736176656c7965762e636c69636b
-
-https://t.me/proxy?server=update.kimt.space&port=443&secret=eec45677ff825bbeaa08866650a4e9ed417570646174652e6b696d742e7370616365
 
 https://t.me/proxy?server=connect.savelyev.click&port=443&secret=ee66c21a2a4223d77565363a7c85007211636f6e6e6563742e736176656c7965762e636c69636b
 
@@ -86,10 +80,6 @@ https://t.me/proxy?server=ad6.arixo.shop&port=443&secret=ee0655739ff0a111810d852
 
 https://t.me/proxy?server=s5.postpulse.space&port=443&secret=ee846d23933361faa6211c7ac6765023be6164322e617269786f2e73686f70
 
-https://t.me/proxy?server=zazdravie.kimt.space&port=443&secret=eec45677ff825bbeaa08866650a4e9ed417a617a6472617669652e6b696d742e7370616365
-
-https://t.me/proxy?server=max.kimt.click&port=443&secret=ee1b153cf06dbd43c6085c359a6702eb936d61782e6b696d742e636c69636b
-
 https://t.me/proxy?server=ardesvpn1.ru&port=8443&secret=ee05cf8e164f926f4a664b2404d276a1d6617264657376706e312e7275
 
 https://t.me/proxy?server=paid1.arixo.shop&port=443&secret=eec54c7a89cf194572ed8d7c8ba8867dc770616964312e617269786f2e73686f70
@@ -107,3 +97,7 @@ https://t.me/proxy?server=aerie.sosun4ik.top&port=443&secret=ee6a0333c1db3f8eaba
 https://t.me/proxy?server=adieu.shmelproxy.top&port=443&secret=ee6a0333c1db3f8eaba5c76731a44203b6617669746f2e7275
 
 https://t.me/proxy?server=petrichor.slarkfat.icu&port=443&secret=ee6a0333c1db3f8eaba5c76731a44203b6617669746f2e7275
+
+https://t.me/proxy?server=s2.postpulse.space&port=443&secret=ee263bf8f7de3c2b04aa1c008ab21e4a566164322e617269786f2e73686f70
+
+https://t.me/proxy?server=tge0a4dd98.koshkaproxy.shop&port=443&secret=ee1e355000114cdb95628c1564225a404b36326334346231662e6b6f73686b6170726f78792e73686f70

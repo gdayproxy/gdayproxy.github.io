@@ -104,10 +104,14 @@ https://t.me/proxy?server=tsw.baboon.digital&port=443&secret=ee5f20bd8e2f77ff570
 
 https://t.me/proxy?server=159.194.205.20&port=443&secret=ee3b51e09b1da6995002e232bb4ba330cf6f7a6f6e2e7275
 
-https://t.me/proxy?server=cdn1.bopen.bond&port=443&secret=eeb4b54ddf0b9f3b82dd7b4a5a888ea82d77622e7275
-
 https://t.me/proxy?server=helk2.mtproxygram.lol&port=443&secret=dd2040ed540bf501ff7924847a265ac057
 
 https://t.me/proxy?server=helk2.mtproxygram.lol&port=443&secret=ee2040ed540bf501ff7924847a265ac05762726f777365722e79616e6465782e7275
 
 https://t.me/proxy?server=helk.mtproxygram.lol&port=443&secret=ee2040ed540bf501ff7924847a265ac05762726f777365722e79616e6465782e7275
+
+https://t.me/proxy?server=kima.rabotaet.online&port=443&secret=ee12e7e5f961f258b04af168a1cba6318a6b696d612e7261626f746165742e6f6e6c696e65
+
+https://t.me/proxy?server=max.kimt.click&port=443&secret=ee1b153cf06dbd43c6085c359a6702eb936d61782e6b696d742e636c69636b
+
+https://t.me/proxy?server=proxy.fluxvpnguard.ru&port=443&secret=ee0a9b43ea17eff45e518fa360979998e770726f78792e666c757876706e67756172642e7275

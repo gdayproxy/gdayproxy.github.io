@@ -171,13 +171,17 @@ tbody tr:hover {
 }
 
 .hidden {
-    display: none !important;
+    display: none;
 }
 
 footer {
     margin-top: 2rem;
     text-align: center;
     font-size: 0.8rem;
+    padding: 1.25rem;
+    position: sticky;
+    bottom: 0;
+    background-color: var(--surface);
     color: var(--text-secondary);
 }
 

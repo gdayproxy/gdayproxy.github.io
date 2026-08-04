@@ -101,5 +101,4 @@ https://t.me/proxy?server=tmr.baboon.digital&port=443&secret=ee4d82b6fa1930c7e58
 https://t.me/proxy?server=tmr.baboon.digital&port=443&secret=ee92420f5452464d6cc27a35e5dc90b124706574726f766963682e7275
 https://t.me/proxy?server=v.vkgosuslugi.ru&port=443&secret=ee4847c4a4a02cb443e9d470b2f94dbe5077622e7275
 https://t.me/proxy?server=web.utkanos.life&port=443&secret=ee331ae197830a753bd9afd0c956fac4f37765622e75746b616e6f732e6c696665
-https://t.me/proxy?server=y.vkgosuslugi.ru&port=443&secret=ee4e82cdf7c4c847b33f27c5d8f2c4053d77622e7275
 https://t.me/proxy?server=yeh.topbelka.ru&port=443&secret=ee050c8f82b0877cccd23a08c65f062b987275747562652e7275

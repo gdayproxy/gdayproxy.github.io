@@ -1,13 +1,11 @@
 https://t.me/proxy?server=85.192.34.18&port=9443&secret=eef390d9757cb92d87826bcef28a6e75ed74676e6e2e6c697665
-https://t.me/proxy?server=akenai.top&port=853&secret=ee54ce330e4690cc297d2b031ff3f288b06d742e616b656e61692e636c69636b
+https://t.me/proxy?server=ardesvpn1.ru&port=8443&secret=ee05cf8e164f926f4a664b2404d276a1d6617264657376706e312e7275
+https://t.me/proxy?server=freeconnect.lol&port=443&secret=ee6a0333c1db3f8eaba5c76731a44203b6617669746f2e7275
 https://t.me/proxy?server=helloheat.go-bull.pro&port=9443&secret=dd6cfd6677ebc9ca5c966925c7b7a85b5d
 https://t.me/proxy?server=media8.happtg.org&port=443&secret=eeaf794bcc20f70b1436b6b92b01b207e26d61676e69742e7275
-https://t.me/proxy?server=megaconnect.click&port=443&secret=ee6a0333c1db3f8eaba5c76731a44203b6617669746f2e7275
+https://t.me/proxy?server=n.koraivpn.cfd&port=10901&secret=eeb59ae9f037b23b3d9f7522bf3321a3176e2e6b6f72616976706e2e636664
 https://t.me/proxy?server=nex7.space&port=443&secret=e8da6fda391b335dff2083634c9e7db5
 https://t.me/proxy?server=nngo.cc&port=443&secret=ddf390d9757cb92d87826bcef28a6e75ed
 https://t.me/proxy?server=nnmm.me&port=443&secret=ddf390d9757cb92d87826bcef28a6e75ed
-https://t.me/proxy?server=node.easyproxy.cfd&port=443&secret=ee6be95a795ee766da019cd30044b837c16e6f64652e6561737970726f78792e636664
-https://t.me/proxy?server=predator-artist.top&port=853&secret=ee54ce330e4690cc297d2b031ff3f288b06d742e616b656e61692e636c69636b
 https://t.me/proxy?server=redflag.yazaebalsyadelatproxy.cc&port=443&secret=ee69e899d89ec68e220ca177557322b27f726564666c61672e79617a616562616c73796164656c617470726f78792e6363
-https://t.me/proxy?server=t.meow-network.com&port=443&secret=ee5622e11fff3e49bcc85280197a6106b5742e6d656f772d6e6574776f726b2e636f6d
 https://t.me/proxy?server=tgnn.live&port=9443&secret=eef390d9757cb92d87826bcef28a6e75ed74676e6e2e6c697665

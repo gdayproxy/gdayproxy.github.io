@@ -6,7 +6,10 @@ https://t.me/proxy?server=95.163.214.161&port=443&secret=eeaf794bcc20f70b1436b6b
 https://t.me/proxy?server=akenai.top&port=853&secret=ee54ce330e4690cc297d2b031ff3f288b06d742e616b656e61692e636c69636b
 https://t.me/proxy?server=ardesvpn1.ru&port=8443&secret=ee05cf8e164f926f4a664b2404d276a1d6617264657376706e312e7275
 https://t.me/proxy?server=cdn6.cdnwave.org&port=443&secret=ee7391242569590e01416101927d38b565646e732d73686f702e7275
+https://t.me/proxy?server=edge.lovely.lat&port=443&secret=ee499cbaa63a17e5071d5babf1ccba89f3656467652e6c6f76656c792e6c6174
+https://t.me/proxy?server=edge.lovely.lat&port=443&secret=ee499cbaa63a17e5071d5babf1ccba89f36d2e6265626f6f2e7275
 https://t.me/proxy?server=freeconnect.lol&port=443&secret=eef7a565db46f8f5bf156054d86db42969617669746f2e7275
+https://t.me/proxy?server=gateway.lovely.lat&port=443&secret=eeec835a34516912f161a0073339be3c64676174657761792e6c6f76656c792e6c6174
 https://t.me/proxy?server=jarko.myrka.digital&port=443&secret=ee04daa35f7150d1d16c43f270c26831086a61726b6f2e6d79726b612e6469676974616c
 https://t.me/proxy?server=media.happtg.org&port=443&secret=eed9cf709eb48bb5a37471fba84864bd7e766b2e7275
 https://t.me/proxy?server=media10.happtg.org&port=443&secret=eeecd508d816f611bb329487809f8dac88706574726f766963682e7275
@@ -20,6 +23,7 @@ https://t.me/proxy?server=proxy.awx.info&port=443&secret=eef8bf3435c7514288510de
 https://t.me/proxy?server=proxy.trost-shield.ru&port=443&secret=ddb7de28881418c53c6fb2d216fc4a385c
 https://t.me/proxy?server=redflag.yazaebalsyadelatproxy.cc&port=443&secret=ee69e899d89ec68e220ca177557322b27f726564666c61672e79617a616562616c73796164656c617470726f78792e6363
 https://t.me/proxy?server=s3.assetflux.org&port=443&secret=ee8fc9c7632b344b1b76639c501ae7cfb5766b2e7275
+https://t.me/proxy?server=skein.chunkycorp.shop&port=8443&secret=ee6a0333c1db3f8eaba5c76731a44203b6617669746f2e7275
 https://t.me/proxy?server=t.meow-network.com&port=443&secret=ee5622e11fff3e49bcc85280197a6106b5742e6d656f772d6e6574776f726b2e636f6d
 https://t.me/proxy?server=t3.myrka.digital&port=444&secret=7oiId3dmZlVVREQzMyIiERF0My5teXJrYS5kaWdpdGFs
 https://t.me/proxy?server=tgnn.live&port=9443&secret=eef390d9757cb92d87826bcef28a6e75ed74676e6e2e6c697665

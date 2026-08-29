@@ -17,6 +17,7 @@ elements.themeToggle.addEventListener("click", () => {
 	localStorage.setItem("theme", isDark ? "dark" : "light");
 	elements.themeToggle.textContent = isDark ? "☀️" : "🌙";
 });
+const proxy_params = ["server", "port", "secret"];
 
 let proxies = [];
 
@@ -87,7 +88,7 @@ function escapeHtml(text) {
 }
 
 function showError(msg) {
-	elements.error.textContent = "❌ " + msg;
+	elements.error.textContent = `❌ ${msg}`;
 	elements.error.classList.remove("hidden");
 	elements.loading.classList.add("hidden");
 	elements.table.classList.add("hidden");
@@ -101,12 +102,23 @@ async function loadProxies() {
 		const text = await response.text();
 		const lines = text.split(/\r?\n/);
 		proxies = lines
-			.map((line) => line.trim())
+			.map((line) => line.trim().replaceAll("tg://", "https://t.me/"))
 			.filter(
 				(line) =>
 					line.startsWith("https://t.me/proxy?") ||
-					line.startsWith("tg://proxy?"),
-			);
+					line.startsWith("https://t.me/webproxy?"),
+			)
+			.map((line) => {
+				const url = new URL(line);
+
+				for (const key of url.searchParams.keys()) {
+					if (!proxy_params.includes(key)) {
+						url.searchParams.delete(key);
+					}
+				}
+
+				return url.href;
+			});
 		renderTable();
 	} catch (err) {
 		console.error(err);

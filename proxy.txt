@@ -13,6 +13,7 @@ https://t.me/proxy?server=90.156.216.188&port=8443&secret=ddee676f6f676c652e636f
 https://t.me/proxy?server=95.163.214.161&port=443&secret=eeaf794bcc20f70b1436b6b92b01b207e26d61676e69742e7275
 https://t.me/proxy?server=HaweJl.jlpoKcu.cloud&port=443&secret=ee3f8a91c2d7e04b6a9f12c5e8370bd4aa786170692e6f7a6f6e2e7275
 https://t.me/proxy?server=admin.valmira.co.uk&port=25565&secret=ee1603010200010001fc030386e24c3add6d656469612e737465616d706f77657265642e636f6d
+https://t.me/proxy?server=ads.helloworld.surf&port=443&secret=dd33e2b81cb9059913f7755ac6604095fa
 https://t.me/proxy?server=akenai.top&port=853&secret=ee54ce330e4690cc297d2b031ff3f288b06d742e616b656e61692e636c69636b
 https://t.me/proxy?server=anchor.lovely.lat&port=443&secret=ee499cbaa63a17e5071d5babf1ccba89f3616e63686f722e6c6f76656c792e6c6174
 https://t.me/proxy?server=anchor.lovely.lat&port=443&secret=ee499cbaa63a17e5071d5babf1ccba89f36d2e6265626f6f2e7275

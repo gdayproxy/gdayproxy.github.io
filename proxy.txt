@@ -54,6 +54,8 @@ https://t.me/proxy?server=alpha.mtproxy.cc&port=443&secret=ee499cbaa63a17e5071d5
 https://t.me/proxy?server=alpha.mtproxy.pw&port=443&secret=ee3f8a91c2d7e04b6a9f12c5e8370bd4aa786170692e6f7a6f6e2e7275
 https://t.me/proxy?server=anchor.lovely.lat&port=443&secret=ee499cbaa63a17e5071d5babf1ccba89f3616e63686f722e6c6f76656c792e6c6174
 https://t.me/proxy?server=anchor.lovely.lat&port=443&secret=ee499cbaa63a17e5071d5babf1ccba89f36d2e6265626f6f2e7275
+https://t.me/proxy?server=anchor.mtproxy.cc&port=443&secret=ee499cbaa63a17e5071d5babf1ccba89f3616e63686f722e6d7470726f78792e6363
+https://t.me/proxy?server=anchor.mtproxy.cc&port=443&secret=ee499cbaa63a17e5071d5babf1ccba89f36d2e6265626f6f2e7275
 https://t.me/proxy?server=api.lovely.lat&port=443&secret=7kmcuqY6F-UHHVur8cy6ifNtLmJlYm9vLnJ1
 https://t.me/proxy?server=api.lovely.lat&port=443&secret=ee499cbaa63a17e5071d5babf1ccba89f36170692e6c6f76656c792e6c6174
 https://t.me/proxy?server=api.lovely.lat&port=443&secret=ee499cbaa63a17e5071d5babf1ccba89f36d2e6265626f6f2e7275

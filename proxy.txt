@@ -288,6 +288,7 @@ https://t.me/proxy?server=white.mtproxy.zip&port=443&secret=ee3f8a91c2d7e04b6a9f
 https://t.me/proxy?server=zero.mtproxy.zip&port=443&secret=ee3f8a91c2d7e04b6a9f12c5e8370bd4aa786170692e6f7a6f6e2e7275
 https://t.me/proxy?server=zone.lovely.lat&port=443&secret=ee499cbaa63a17e5071d5babf1ccba89f36d2e6265626f6f2e7275
 https://t.me/proxy?server=zone.lovely.lat&port=443&secret=ee499cbaa63a17e5071d5babf1ccba89f37a6f6e652e6c6f76656c792e6c6174
+https://t.me/proxy?server=zone.lovely.lat&port=443&secret=eeaadd88aa9facd454936d0c42dc128e777a6f6e652e6c6f76656c792e6c6174
 https://t.me/webproxy?server=flare-tg.xyz&secret=341b03f574bb516bee51a6c6aa68f212
 https://t.me/webproxy?server=tgweb-de.mooo.com&secret=c1d2e3f4a5061728394b5c6d7e8f9012
 https://t.me/webproxy?server=websw.freenet.ddnsgeek.com&secret=f43cfa0cb4b1d1124643927f09de3c7b

@@ -96,12 +96,27 @@ function showError(msg) {
 	elements.noData.classList.add("hidden");
 }
 
+function getProxyServer(line) {
+	const url = new URL(line);
+
+	const server = url.searchParams.get("server");
+	const port = url.searchParams.get("port");
+
+	return port === null ? server : `${server}:${port}`;
+}
+
 async function loadProxies() {
 	try {
 		const response = await fetch("proxy.txt");
 		if (!response.ok) throw new Error(`HTTP ${response.status}`);
 		const text = await response.text();
 		const lines = text.split(/\r?\n/);
+
+		const collator = new Intl.Collator("en", {
+			numeric: true,
+			sensitivity: "base",
+		});
+
 		proxies = lines
 			.map((line) => line.trim().replaceAll("tg://", "https://t.me/"))
 			.filter((line) => {
@@ -125,11 +140,7 @@ async function loadProxies() {
 				return url.href;
 			})
 			.sort((a, b) => {
-				const urlA = new URL(a);
-				const urlB = new URL(b);
-
-				return urlA.searchParams
-					.get("server").localeCompare(urlB.searchParams.get("server"));
+				return collator.compare(getProxyServer(a), getProxyServer(b));
 			});
 		renderTable();
 	} catch (err) {

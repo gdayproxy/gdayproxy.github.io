@@ -107,11 +107,8 @@ async function loadProxies() {
 			.filter((line) => {
 				const url = new URL(line);
 
-				console.log(url.protocol, url.host, url.pathname, url.searchParams.get("server"))
-
 				return (
-					url.protocol === "https:" &&
-					url.host === "t.me" &&
+					url.origin === "https://t.me" &&
 					proxy_types.includes(url.pathname) &&
 					url.searchParams.get("server") !== null
 				);

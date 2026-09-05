@@ -132,7 +132,7 @@ async function loadProxies() {
 				const urlB = new URL(b);
 
 				return urlA.searchParams
-					.get("server") === urlB.searchParams.get("server");
+					.get("server").localeCompare(urlB.searchParams.get("server"));
 			});
 		renderTable();
 	} catch (err) {

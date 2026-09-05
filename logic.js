@@ -8,7 +8,7 @@ const elements = {
 	themeToggle: document.getElementById("theme-toggle"),
 };
 
-// Тема
+// Theme
 const theme = localStorage.getItem("theme") || "dark";
 document.body.classList.toggle("dark", theme === "dark");
 elements.themeToggle.textContent = theme === "dark" ? "☀️" : "🌙";
@@ -22,6 +22,7 @@ const proxy_types = ["/proxy", "/socks", "/webproxy"];
 
 let proxies = [];
 
+/** Render the list of proxies */
 function renderTable() {
 	elements.tbody.innerHTML = "";
 	if (proxies.length === 0) {
@@ -56,6 +57,10 @@ function renderTable() {
 	});
 }
 
+/**
+ * Copy the text
+ * @param {string} text
+ */
 async function copyText(text) {
 	try {
 		await navigator.clipboard.writeText(text);
@@ -69,7 +74,7 @@ async function copyText(text) {
 	}
 }
 
-// Кнопка "Копировать всё"
+/** Button "Copy all" */
 elements.copyAllHeaderBtn.addEventListener("click", async () => {
 	if (!proxies.length) return;
 	await copyText(proxies.join("\n"));
@@ -82,12 +87,18 @@ elements.copyAllHeaderBtn.addEventListener("click", async () => {
 	}, 1500);
 });
 
+/**
+ * Escape all html code
+ * @param {string} text
+ * @returns {string} escaped_text
+ */
 function escapeHtml(text) {
 	const div = document.createElement("div");
 	div.textContent = text;
 	return div.innerHTML;
 }
 
+/** Show the error */
 function showError(msg) {
 	elements.error.textContent = `❌ ${msg}`;
 	elements.error.classList.remove("hidden");
@@ -96,21 +107,25 @@ function showError(msg) {
 	elements.noData.classList.add("hidden");
 }
 
-function getProxyServer(line) {
-	const url = new URL(line);
-
+/**
+ * Get Hostname of the server
+ * @param {URL} url
+ * @returns {string} hostname
+ */
+function getProxyServer(url) {
 	const server = url.searchParams.get("server");
 	const port = url.searchParams.get("port");
 
 	return port === null ? server : `${server}:${port}`;
 }
 
+/** Load all proxies */
 async function loadProxies() {
 	try {
 		const response = await fetch("proxy.txt");
 		if (!response.ok) throw new Error(`HTTP ${response.status}`);
 		const text = await response.text();
-		const lines = text.split(/\r?\n/);
+		const lines = text.replaceAll("tg://", "https://t.me/").split(/\r?\n/);
 
 		const collator = new Intl.Collator("en", {
 			numeric: true,
@@ -118,30 +133,24 @@ async function loadProxies() {
 		});
 
 		proxies = lines
-			.map((line) => line.trim().replaceAll("tg://", "https://t.me/"))
-			.filter((line) => {
-				const url = new URL(line);
-
-				return (
-					url.origin === "https://t.me" &&
+			.filter((line) => line.indexOf("https://t.me/") !== -1)
+			.map((line) => new URL(line.slice(line.indexOf("https://t.me/")).trim()))
+			.filter(
+				(url) =>
 					proxy_types.includes(url.pathname) &&
-					url.searchParams.get("server") !== null
-				);
-			})
-			.map((line) => {
-				const url = new URL(line);
-
+					url.searchParams.get("server") !== null,
+			)
+			.map((url) => {
 				for (const key of url.searchParams.keys()) {
 					if (!proxy_params.includes(key)) {
 						url.searchParams.delete(key);
 					}
 				}
 
-				return url.href;
+				return url;
 			})
-			.sort((a, b) => {
-				return collator.compare(getProxyServer(a), getProxyServer(b));
-			});
+			.sort((a, b) => collator.compare(getProxyServer(a), getProxyServer(b)))
+			.map((url) => url.href);
 		renderTable();
 	} catch (err) {
 		console.error(err);

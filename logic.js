@@ -122,7 +122,7 @@ function getProxyServer(url) {
 /** Load all proxies */
 async function loadProxies() {
 	try {
-		const response = await fetch("proxy.txt");
+		const response = await fetch(`${location.origin}/proxy.txt`);
 		if (!response.ok) throw new Error(`HTTP ${response.status}`);
 		const text = await response.text();
 		const lines = text.replaceAll("tg://", "https://t.me/").split(/\r?\n/);

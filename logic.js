@@ -138,7 +138,9 @@ async function loadProxies() {
 			.filter(
 				(url) =>
 					proxy_types.includes(url.pathname) &&
-					url.searchParams.get("server") !== null,
+					url.searchParams.get("server") !== null &&
+					(url.pathname === "/webproxy" ||
+						url.searchParams.get("port") !== null),
 			)
 			.map((url) => {
 				for (const key of url.searchParams.keys()) {

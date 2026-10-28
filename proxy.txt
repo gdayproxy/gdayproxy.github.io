@@ -70,7 +70,6 @@ https://t.me/proxy?server=glow.lanternmoss.top&port=443&secret=ee2b6eb790d613a17
 https://t.me/proxy?server=glow1.lanternmoss.top&port=443&secret=eee418f291b6279b0f441469b2d05e5a7e6c69746536342e73697465
 https://t.me/proxy?server=gold.mishutkin.click&port=443&secret=eeba4eb7b0358ab39411d49ccebc38b895676f6c642e6d69736875746b696e2e636c69636b
 https://t.me/proxy?server=granite&port=443&secret=eea9b8c069dc3623d6e4ecafa7387b13c56c69746536342e73697465
-https://t.me/proxy?server=granite&port=443&secret=eea9b8c069dc3623d6e4ecafa7387b13c56c69746536342e73697465
 https://t.me/proxy?server=harbor.driftquill.click&port=443&secret=ee2b6eb790d613a1725557ce33b9a87b30786170692e6f7a6f6e2e7275
 https://t.me/proxy?server=harbor.lite64.xyz&port=443&secret=eee1b6547bfc0c2f75844fc670f8ea5e3a6c69746536342e73697465
 https://t.me/proxy?server=haven.driftquill.click&port=443&secret=ee2b6eb790d613a1725557ce33b9a87b30786170692e6f7a6f6e2e7275

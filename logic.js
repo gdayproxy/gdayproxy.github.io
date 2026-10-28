@@ -162,17 +162,19 @@ async function loadProxies() {
             continue;
           }
 
-					if (!simplifiedValue) continue;
+          if (!simplifiedValue) continue;
 
-					if (key === "port") {
-						simplifiedValue = Number.parseInt(value);
-					}
+          if (key === "port") {
+            simplifiedValue = Number.parseInt(value);
+          }
 
-					url.searchParams.set(key, simplifiedValue);
+          url.searchParams.set(key, simplifiedValue);
         }
 
         return url;
-      })
+      });
+
+    proxies = [...new Map(proxies.map((url) => [url.href, url])).values()]
       .map((url) => ({ url, key: getProxyServer(url) }))
       .sort((a, b) => collator.compare(a.key, b.key))
       .map((data) => data.url);

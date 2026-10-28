@@ -1,45 +1,46 @@
 <!doctype html>
 <html lang="ru">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>G'day Proxian</title>
-		<link rel="stylesheet" href="style.css" />
-	</head>
-	<body>
-		<div class="container">
-			<header>
-				<h1>G'day Proxian</h1>
-				<button id="theme-toggle" type="button" title="Сменить тему">🌙</button>
-			</header>
 
-			<div id="loading" class="status">⏳ Загрузка proxy.txt...</div>
-			<div id="error" class="hidden"></div>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>G'day Proxian</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
 
-			<table id="proxy-table" class="hidden">
-				<thead>
-					<tr>
-						<th>#</th>
-						<th>Ссылка</th>
-						<th>
-							<button id="copy-all-header-btn" type="button" title="Копировать все прокси">
-								📋 Копировать всё
-							</button>
-						</th>
-					</tr>
-				</thead>
-				<tbody id="proxy-tbody"></tbody>
-			</table>
-			<div id="no-data" class="hidden">Файл не содержит корректных ссылок.</div>
+<body>
+	<div class="container">
+		<header>
+			<h1>G'day Proxian</h1>
+			<button id="theme-toggle" type="button" title="Сменить тему">🌙</button>
+		</header>
 
-			<footer>
-				Если вам не сложно, то поставьте 🌟 на
-				<a href="https://github.com/gdayproxy/gdayproxy.github.io/"
-					>Github проекта</a
-				>
-			</footer>
-		</div>
+		<div id="loading" class="status">⏳ Загрузка proxy.txt...</div>
+		<div id="error" class="hidden"></div>
 
-		<script src="logic.js"></script>
-	</body>
+		<table id="proxy-table" class="hidden">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Ссылка</th>
+					<th>
+						<button id="copy-all-header-btn" type="button" title="Копировать все прокси">
+							📋 Копировать всё
+						</button>
+					</th>
+				</tr>
+			</thead>
+			<tbody id="proxy-tbody"></tbody>
+		</table>
+		<div id="no-data" class="hidden">Файл не содержит корректных ссылок.</div>
+
+		<footer>
+			Если вам не сложно, то поставьте 🌟 на
+			<a href="https://github.com/gdayproxy/gdayproxy.github.io/">GitHub проекта</a>
+		</footer>
+	</div>
+
+	<script src="logic.js"></script>
+</body>
+
 </html>

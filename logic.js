@@ -33,28 +33,18 @@ function renderTable() {
   elements.noData.classList.add("hidden");
   elements.table.classList.remove("hidden");
 
+  const frag = document.createDocumentFragment();
   proxies.forEach((link, i) => {
+    const escaped_url = escapeHtml(link);
     const row = document.createElement("tr");
     row.innerHTML = `
             <td>${i + 1}</td>
-            <td><a class="proxy-link" href="${escapeHtml(link)}" target="_blank">${escapeHtml(link)}</a></td>
-            <td><button class="copy-btn" data-link="${escapeHtml(link)}">📋 Копировать</button></td>
+            <td><a class="proxy-link" href="${escaped_url}" target="_blank">${escaped_url}</a></td>
+            <td><button class="copy-btn" data-link="${escaped_url}">📋 Копировать</button></td>
           `;
-    elements.tbody.appendChild(row);
+    frag.appendChild(row);
   });
-
-  document.querySelectorAll(".copy-btn").forEach((btn) => {
-    btn.addEventListener("click", async () => {
-      const link = btn.getAttribute("data-link");
-      await copyText(link);
-      btn.textContent = "✅ Скопировано";
-      btn.classList.add("copied");
-      setTimeout(() => {
-        btn.textContent = "📋 Копировать";
-        btn.classList.remove("copied");
-      }, 1500);
-    });
-  });
+  elements.tbody.replaceChildren(frag);
 }
 
 /**
@@ -125,9 +115,13 @@ async function loadProxies() {
     const response = await fetch(`${location.origin}/proxy.txt`);
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const text = await response.text();
-    const lines = text.replaceAll("tg://", "https://t.me/").split(/\r?\n/);
+    const lines = text
+      .replaceAll("tg://", "https://t.me/")
+      .replaceAll("https://", "\nhttps://")
+      .split(/\r?\n/);
 
     const collator = new Intl.Collator("en", {
+      usage: "sort",
       numeric: true,
       sensitivity: "base",
     });
@@ -138,20 +132,50 @@ async function loadProxies() {
       .filter(
         (url) =>
           proxy_types.includes(url.pathname) &&
-          url.searchParams.get("server") !== null &&
-          (url.pathname === "/webproxy" || url.searchParams.get("port") !== null),
+          typeof url.searchParams.get("server") === "string" &&
+          (url.pathname === "/webproxy" || url.searchParams.has("port")),
       )
       .map((url) => {
-        for (const key of url.searchParams.keys()) {
+        for (const [key, value] of url.searchParams.entries()) {
           if (!proxy_params.includes(key)) {
             url.searchParams.delete(key);
+            continue;
           }
+
+          let regex = null;
+          switch (key) {
+            case "port":
+              regex = /^(\d*)+/;
+              break;
+            case "server":
+              regex = /^([a-zA-Z.\d]*)+/;
+              break;
+            default:
+              regex = /^([a-zA-Z\d]*)+/;
+              break;
+          }
+          let match = value.match(regex);
+          let simplifiedValue = null;
+          if (match) {
+            simplifiedValue = match[0];
+          } else {
+            continue;
+          }
+
+					if (!simplifiedValue) continue;
+
+					if (key === "port") {
+						simplifiedValue = Number.parseInt(value);
+					}
+
+					url.searchParams.set(key, simplifiedValue);
         }
 
         return url;
       })
-      .sort((a, b) => collator.compare(getProxyServer(a), getProxyServer(b)))
-      .map((url) => url.href);
+      .map((url) => ({ url, key: getProxyServer(url) }))
+      .sort((a, b) => collator.compare(a.key, b.key))
+      .map((data) => data.url);
     renderTable();
   } catch (err) {
     console.error(err);
@@ -169,3 +193,16 @@ async function loadProxies() {
 }
 
 loadProxies();
+elements.tbody.addEventListener("click", async (e) => {
+  const btn = e.target.closest(".copy-btn");
+  if (!btn) return;
+
+  const link = btn.getAttribute("data-link");
+  await copyText(link);
+  btn.textContent = "✅ Скопировано";
+  btn.classList.add("copied");
+  setTimeout(() => {
+    btn.textContent = "📋 Копировать";
+    btn.classList.remove("copied");
+  }, 1500);
+});

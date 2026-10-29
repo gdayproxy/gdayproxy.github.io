@@ -20,6 +20,7 @@ elements.themeToggle.addEventListener("click", () => {
 const proxy_params = ["server", "port", "secret"];
 const proxy_types = ["/proxy", "/socks", "/webproxy"];
 
+/** @type {string[]} */
 let proxies = [];
 
 /** Render the list of proxies */
@@ -80,7 +81,7 @@ elements.copyAllHeaderBtn.addEventListener("click", async () => {
 /**
  * Escape all html code
  * @param {string} text
- * @returns {string} escaped_text
+ * @returns {string}
  */
 function escapeHtml(text) {
   const div = document.createElement("div");
@@ -106,7 +107,7 @@ function getProxyServer(url) {
   const server = url.searchParams.get("server");
   const port = url.searchParams.get("port");
 
-  return port === null ? server : `${server}:${port}`;
+  return [server, port].filter(Boolean).join(":");
 }
 
 /** Load all proxies */

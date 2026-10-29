@@ -17,7 +17,7 @@ elements.themeToggle.addEventListener("click", () => {
   localStorage.setItem("theme", isDark ? "dark" : "light");
   elements.themeToggle.textContent = isDark ? "☀️" : "🌙";
 });
-const proxy_params = ["server", "port", "secret"];
+const proxy_params = ["server", "port", "secret", "user", "pass"];
 const proxy_types = ["/proxy", "/socks", "/webproxy"];
 
 /** @type {string[]} */
@@ -137,11 +137,11 @@ async function loadProxies() {
           (url.pathname === "/webproxy" || url.searchParams.has("port")),
       )
       .map((url) => {
-        for (const [key, value] of url.searchParams.entries()) {
-          if (!proxy_params.includes(key)) {
-            url.searchParams.delete(key);
-            continue;
-          }
+        const newURL = new URL(url.pathname, "https://t.me/");
+
+        for (const key of proxy_params) {
+          const value = url.searchParams.get(key);
+          if (typeof value !== "string") continue;
 
           let regex = null;
           switch (key) {
@@ -169,10 +169,10 @@ async function loadProxies() {
             simplifiedValue = Number.parseInt(value);
           }
 
-          url.searchParams.set(key, simplifiedValue);
+          newURL.searchParams.set(key, simplifiedValue);
         }
 
-        return url;
+        return newURL;
       });
 
     proxies = [...new Map(proxies.map((url) => [url.href, url])).values()]

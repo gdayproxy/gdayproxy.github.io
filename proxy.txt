@@ -121,7 +121,6 @@ https://t.me/proxy?server=visu18.fernlark.xyz&port=443&secret=ee899032aa75159cc1
 https://t.me/proxy?server=vitori41.tidelark.cc&port=443&secret=ee214011ba04108a7b1836df3a5e918b3b7669746f726934312e746964656c61726b2e6363
 https://t.me/webproxy?server=web.jumbleconnect.ru&secret=89a5ca0dd451fbe51762d7cdcc13a5be
 https://t.me/webproxy?server=web.suslik&secret=dd72a2c47b19adfed97c95bc4fdd38b83f
-https://t.me/proxy?server=xxmatrixx.top&port=853&secret=eee4508d288bf81791177a2f5e73ac06cf6d617472697878782e746f70
 https://t.me/proxy?server=ykima.davay.click&port=443&secret=ee06dfdbdf271bab18c6b606484c237384796b696d612e64617661792e636c69636b
 https://t.me/webproxy?server=yygeb.proxyz.site&secret=dd1087dc81e4c6acfa57f22147fcffcfb0
 https://t.me/proxy?server=z1.nevcodeframe.com&port=443&secret=eee5e0d75865263bccabe94c92f446184f7a312e6e6576636f64656672616d652e636f6d

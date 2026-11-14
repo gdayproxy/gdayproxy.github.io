@@ -148,11 +148,8 @@ async function loadProxies() {
             case "port":
               regex = /^(\d*)+/;
               break;
-            case "server":
-              regex = /^([a-zA-Z.\d]*)+/;
-              break;
             default:
-              regex = /^([a-zA-Z\d]*)+/;
+              regex = /^([\w\d.-]*)+/;
               break;
           }
           let match = value.match(regex);

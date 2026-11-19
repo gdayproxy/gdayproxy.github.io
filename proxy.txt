@@ -1,12 +1,10 @@
-https://t.me/webproxy?server=auth.joinfo.xyz&secret=cAMeybBT3H7hGbCFEUIZn6w
 https://t.me/webproxy?server=boberlox.site&secret=dd9a04242727dfa0a4a7c77e7813929c01
-https://t.me/webproxy?server=cdn2.badwinkvn.site&secret=dd69144f67c9857d37d2b7a40d0df7a40b
 https://t.me/proxy?server=cms.roscompozor.xyz&port=443&secret=ee0b3b8fa0d1ddcbb93950037328e6f0d0636d732e726f73636f6d706f7a6f722e78797a
-https://t.me/webproxy?server=darkproxy.qavi-13.co.uk&secret=cHbGbhCyWNOhJBSixFU5ZRQ
-https://t.me/proxy?server=shared2.ddproxy.xyz&port=443&secret=7t3d3d3d3d3d3d3d3d3d3d1tLmJlYm9vLnJ1
-https://t.me/proxy?server=shared4.ddproxy.xyz&port=443&secret=eedddddddddddddddddddddddddddddddd6d2e6265626f6f2e7275
+https://t.me/proxy?server=freeconnect.lol&port=443&secret=eeec15a78c3842e866c302c8526175a68c7975672d6c696e6b2e7275
+https://t.me/proxy?server=nyakawai.shop&port=443&secret=eeec15a78c3842e866c302c8526175a68c7975672d6c696e6b2e7275
+https://t.me/webproxy?server=prismcache.co.uk&secret=dd5c89ab20266ce759f96a0745b63d7cdf
+https://t.me/proxy?server=shared3.ddproxy.xyz&port=443&secret=eedddddddddddddddddddddddddddddddd6d2e6265626f6f2e7275
 https://t.me/webproxy?server=tavienne.xyz&secret=dd0ac7290872004ac465cfea1b05d5ffb8
 https://t.me/webproxy?server=vale86.oops.wtf&secret=9fc8d7d1aeee614bd5fa3b760da44dd3
 https://t.me/webproxy?server=web.boberlox.site&secret=dd9a04242727dfa0a4a7c77e7813929c01
-https://t.me/webproxy?server=web.jumbleconnect.ru&secret=89a5ca0dd451fbe51762d7cdcc13a5be
 https://t.me/webproxy?server=zarnia.xyz&secret=ddfd367c42b90b0d8ec99796e343454424

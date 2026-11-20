@@ -1,6 +1,7 @@
 https://t.me/proxy?server=as.mkim.click&port=443&secret=ee2dfa3526fc70b7abd7a09eade6ccea1f61732e6d6b696d2e636c69636b
 https://t.me/webproxy?server=boberlox.site&secret=dd9a04242727dfa0a4a7c77e7813929c01
 https://t.me/proxy?server=cms.roscompozor.xyz&port=443&secret=ee0b3b8fa0d1ddcbb93950037328e6f0d0636d732e726f73636f6d706f7a6f722e78797a
+https://t.me/proxy?server=This-is-home.ir.bcsadwtgd.info.&port=7443&secret=eeNEgYdJvXrFGRMCIMJdCQ
 https://t.me/webproxy?server=prismcache.co.uk&secret=dd5c89ab20266ce759f96a0745b63d7cdf
 https://t.me/webproxy?server=vale86.oops.wtf&secret=9fc8d7d1aeee614bd5fa3b760da44dd3
 https://t.me/webproxy?server=web.boberlox.site&secret=dd9a04242727dfa0a4a7c77e7813929c01
